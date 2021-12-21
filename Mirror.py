@@ -15,6 +15,7 @@ import requests
 import json
 from PyQt5.QtCore import *
 import time
+import sys
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36'
@@ -237,9 +238,7 @@ class Mirror(QtWidgets.QMainWindow):
 
 
 
-if __name__ == '__main__':
-    import sys
-    
+if __name__ == '__main__':   
     QtCore.QCoreApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling)
     app = QtWidgets.QApplication(sys.argv)  # 定义Qt应用
     MainWindow = QtWidgets.QMainWindow()  # 窗口实例
